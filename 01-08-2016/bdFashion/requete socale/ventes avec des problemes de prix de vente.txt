@@ -1,0 +1,1 @@
+SELECT v.*,p.prixEntree, p.prixSortie FROM `produit` as p,vente as v WHERE p.idproduit=v.idproduit and montant < (v.quantite * p.prixSortie)

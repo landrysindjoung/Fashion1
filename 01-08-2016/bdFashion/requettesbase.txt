@@ -1,0 +1,8 @@
+SELECT p.idfournisseur,sum(s.quantite*p.prixEntree) FROM stock as s,produit as p WHERE s.idproduit=p.idproduit group by p.idFournisseur 
+
+SELECT s.idproduit,s.quantite,p.prixEntree FROM stock s,produit p WHERE s.idproduit=p.idproduit and idFournisseur=FAS
+
+
+SELECT sum(quantite*prixEntree) FROM stockfash WHERE 1
+
+SELECT p.idfournisseur,sum(a.quantite*p.prixEntree) FROM arrivages as a,produit as p WHERE a.idproduit=p.idproduit group by p.idFournisseur 

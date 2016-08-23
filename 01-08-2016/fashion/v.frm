@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=(select `fashion`.`produit`.`nomP` AS `nomP`,count(`fashion`.`produit`.`nomP`) AS `n` from `fashion`.`produit` group by `fashion`.`produit`.`nomP`)
+md5=d5b31a7fe8f07ac0535838e50df73dde
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2013-03-29 18:57:15
+create-version=1
+source=(SELECT nomP,count(nomP) as n FROM `produit` group by nomP)
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=(select `fashion`.`produit`.`nomP` AS `nomP`,count(`fashion`.`produit`.`nomP`) AS `n` from `fashion`.`produit` group by `fashion`.`produit`.`nomP`)
